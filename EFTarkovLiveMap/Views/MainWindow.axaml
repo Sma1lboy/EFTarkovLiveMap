@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:EFTarkovLiveMap.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        Height="600" Width="800"
+        x:Class="EFTarkovLiveMap.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="EFTarkovLiveMap"
+        FontFamily="Fira Code"
+        CanResize="False"
+        >
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <Grid ColumnDefinitions="200, 600" RowDefinitions="600">
+        <Border Grid.Column="0" Padding="10 30 10 0" Background="DimGray" >
+            
+            <StackPanel MaxHeight="600" MaxWidth="200">
+                <TextBlock Margin="0 0 0 20" TextAlignment="Center">EFTarkovLiveMap</TextBlock>
+                <Button Width="180" Background="LightGray" Name="LiveMapPage" Click="LiveMapClick" >
+                    <TextBlock TextAlignment="Center">Live Map</TextBlock>
+                </Button>
+            </StackPanel>
+        </Border>
+       
+        <ContentControl Grid.Column="1" Name="ContentArea"></ContentControl>
+
+    </Grid>
+</Window>
+
