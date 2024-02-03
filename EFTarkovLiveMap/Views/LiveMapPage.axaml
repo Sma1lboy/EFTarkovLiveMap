@@ -1,0 +1,36 @@
+<UserControl  xmlns="https://github.com/avaloniaui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:vm="clr-namespace:EFTarkovLiveMap.ViewModels"
+                  x:Class="EFTarkovLiveMap.Views.LiveMapPage" 
+                  x:DataType="vm:MainWindowViewModel"
+                  KeyDown="KeyDownHandler"
+                  Width="600"
+                  Height="600"
+                  >
+    
+    <StackPanel>
+        <TextBlock Text="Live Map" FontSize="20" FontWeight="Bold" Margin="10"/>
+        
+        <TextBlock Margin="10" TextWrapping="Wrap" FontStyle="Italic">Use the shortcut key to enable this feature, you need to select the map in the current software before entering the game.</TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="On/Off ShortCut" Margin="10"/>
+            <Button Name="ShortCutButton"  Content="{Binding ShortCutKey}" Click="RecordingButtonClick"></Button>
+            <TextBlock Name="RecordingText" Margin="10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Select Map" Margin="10"/>
+            <Menu SelectedValue="Selected" >
+                <MenuItem x:Name="MenuItem" Header="Forest"></MenuItem>
+            </Menu>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Turn on Map Overlay" Margin="10"/>
+            <CheckBox Name="OverlayCheckBox" IsEnabled="False" IsChecked="{Binding TurnOnOverlay}"></CheckBox>
+        </StackPanel>
+        
+        
+    </StackPanel>
+</UserControl>
+
