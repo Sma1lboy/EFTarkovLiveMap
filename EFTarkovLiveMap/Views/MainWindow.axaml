@@ -11,7 +11,7 @@
         Title="EFTarkovLiveMap"
         FontFamily="Fira Code"
         CanResize="False"
-        >
+        > 
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,

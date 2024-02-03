@@ -6,11 +6,17 @@
         x:Class="EFTarkovLiveMap.Views.Map"
         Title="Map"
         ExtendClientAreaChromeHints="NoChrome"
-        WindowStartupLocation="CenterOwner"
+        WindowStartupLocation="Manual"
+        
         ExtendClientAreaToDecorationsHint="True"
         Topmost="True"
-        Height="200"
+        Height="300"
         Width="400"
-        >
-        <Image Source="{SvgImage /Assets/Maps/Factory.svg}" PointerMoved="MouseMoving"></Image>
+        CanResize="False"
+>
+        <Image Name="myImageControll" Margin="0">
+                <Image.RenderTransform>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Image.RenderTransform>
+        </Image>
 </Window>

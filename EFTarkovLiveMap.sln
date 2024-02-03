@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFTarkovLiveMap", "EFTarkovLiveMap\EFTarkovLiveMap.csproj", "{E3081902-6C71-455D-99E0-0DE0B101A212}"
 EndProject
 Global
@@ -12,5 +15,11 @@ Global
 		{E3081902-6C71-455D-99E0-0DE0B101A212}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3081902-6C71-455D-99E0-0DE0B101A212}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3081902-6C71-455D-99E0-0DE0B101A212}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9856F74-D969-4484-9CA4-E3CD264589DA}
 	EndGlobalSection
 EndGlobal

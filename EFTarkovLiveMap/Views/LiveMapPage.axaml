@@ -30,7 +30,6 @@
             <CheckBox Name="OverlayCheckBox" IsEnabled="False" IsChecked="{Binding TurnOnOverlay}"></CheckBox>
         </StackPanel>
         
-        
     </StackPanel>
 </UserControl>
 
