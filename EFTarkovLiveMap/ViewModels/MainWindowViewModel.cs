@@ -20,7 +20,7 @@ public class MainWindowViewModel : INotifyPropertyChanged
     /// <summary>
     /// ShortCutKey binding for turn on/off map overlay
     /// </summary>
-    private Key _shortCutKey = Key.F12;
+    private Key _shortCutKey = Key.F9;
     public Key ShortCutKey
     {
         get => _shortCutKey;
