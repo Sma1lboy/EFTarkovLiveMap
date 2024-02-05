@@ -25,8 +25,15 @@
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.6" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.6" />
+        <PackageReference Include="Indieteur.GlobalHooks" Version="1.0.0" />
         <PackageReference Include="Selenium.WebDriver" Version="4.17.0" />
         <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="121.0.6167.8500" />
         <PackageReference Include="Svg.Skia" Version="1.0.0.10" />
+        <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Compile Remove="Utils\InterceptKeys.cs" />
     </ItemGroup>
 </Project>
