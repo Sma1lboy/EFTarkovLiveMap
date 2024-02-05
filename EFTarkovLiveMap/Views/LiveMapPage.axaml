@@ -21,15 +21,27 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Select Map" Margin="10"/>
-            <Menu SelectedValue="Selected" >
-                <MenuItem x:Name="MenuItem" Header="Forest"></MenuItem>
-            </Menu>
+            <TabControl></TabControl>
+            <ComboBox Name="ComboBox"  SelectedIndex="0">
+                <ComboBoxItem>factory</ComboBoxItem>
+                <ComboBoxItem>ground-zero</ComboBoxItem>
+                <ComboBoxItem>customs</ComboBoxItem>
+                <ComboBoxItem>interchange</ComboBoxItem>
+                <ComboBoxItem>woods</ComboBoxItem>
+                <ComboBoxItem>shoreline</ComboBoxItem>
+                <ComboBoxItem>reserve</ComboBoxItem>
+                <ComboBoxItem>lighthouse</ComboBoxItem>
+                <ComboBoxItem>streets</ComboBoxItem>
+                <ComboBoxItem>lab</ComboBoxItem>
+            </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Turn on Map Overlay" Margin="10"/>
             <CheckBox Name="OverlayCheckBox" IsEnabled="False" IsChecked="{Binding TurnOnOverlay}"></CheckBox>
         </StackPanel>
-        
+        <StackPanel Orientation="Horizontal">
+         <TextBlock Name="LogText"></TextBlock>
+        </StackPanel>
     </StackPanel>
 </UserControl>
 
